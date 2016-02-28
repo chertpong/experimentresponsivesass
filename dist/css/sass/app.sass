@@ -1,0 +1,46 @@
+*
+    -webkit-box-sizing: border-box
+    border-box-moz-box-sizing: border-box
+    border-boxbox-sizing: border-box
+    border-box: border-box
+//red border for test only
+*
+    border: 1px solid red !important
+$mobileScreenMaxSize : 480px
+$tabletScreenMaxSize : 1024px
+
+.row
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+
+=col($column)
+    width: $column / 12 * 100%
+.col-1
+    +col(1)
+.col-2
+    +col(2)
+.col-3
+    +col(3)
+.col-4
+    +col(4)
+.col-5
+    +col(5)
+.col-6
+    +col(6)
+.col-7
+    +col(7)
+.col-8
+    +col(8)
+.col-9
+    +col(9)
+.col-10
+    +col(10)
+.col-11
+    +col(11)
+.col-12
+    +col(12)
+
+@media only screen and (max-width : $mobileScreenMaxSize)
+    p
+        color: green
